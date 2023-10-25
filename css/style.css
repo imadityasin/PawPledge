@@ -6811,3 +6811,15 @@ h6 {
 .counter_area{
   padding-top: 50px;
 }
+
+.latest_activites_area .activites_info{
+  padding-right: 0px;
+}
+.section_padding{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer .footer_top{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

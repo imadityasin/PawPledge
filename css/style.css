@@ -3185,6 +3185,7 @@ h3 {
   -moz-border-radius: 7px 7px 0 0;
   border-radius: 7px 7px 0 0;
   overflow: hidden;
+  height: 300px;
 }
 
 /* line 97, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_causes.scss */

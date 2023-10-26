@@ -6826,3 +6826,16 @@ h6 {
   padding-left: 20%;
   padding-right: 20%;
 }
+
+.thumb_details{
+  padding-left: 35%;
+  padding-right: 30%;
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+.details{
+  justify-content: center;
+}
+
+

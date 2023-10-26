@@ -2188,8 +2188,8 @@ h3 {
 
 /* line 9, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_footer.scss */
 .footer .footer_top {
-  padding-top: 130px;
-  padding-bottom: 90px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 767px) {
@@ -2533,12 +2533,12 @@ h3 {
 
 /* line 1, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
 .breadcam_bg {
-  background-image: url(../img/banner/bradcam.png);
+  background-image: url(../img/banner/Aboutus.png);
 }
 
 /* line 4, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
 .breadcam_bg_1 {
-  background-image: url(../img/banner/bradcam2.png);
+  background-image: url(../img/banner/bradcam.jpeg);
 }
 
 /* line 7, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */

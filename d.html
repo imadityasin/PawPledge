@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .donation-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .donation-amount-buttons button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .donation-frequency-buttons button {
+      background-color: #008CBA;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .comment-section {
+      margin-top: 20px;
+    }
+
+    .comment-section textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .honor-section {
+      margin-top: 20px;
+    }
+
+    .honor-section input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .submit-button {
+      background-color: #ff6600;
+      color: #fff;
+      padding: 15px 30px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="donation-container">
+    <h2>Support Our Pets</h2>
+
+    <div class="donation-amount-buttons">
+      <button onclick="setAmount(10)">$10</button>
+      <button onclick="setAmount(25)">$25</button>
+      <button onclick="setAmount(50)">$50</button>
+      <!-- Add more buttons as needed -->
+    </div>
+
+    <div class="donation-frequency-buttons">
+      <button onclick="setFrequency('monthly')">Monthly</button>
+      <button onclick="setFrequency('quarterly')">Quarterly</button>
+      <button onclick="setFrequency('yearly')">Yearly</button>
+      <button onclick="setFrequency('one-time')">One-Time</button>
+    </div>
+
+    <div class="comment-section">
+        <label>
+            <input type="checkbox" id="addCommentCheckbox" onchange="toggleCommentField()"> Add a Comment
+        </label>
+        <textarea id="commentField" placeholder="Your comment..." style="display: none;"></textarea>
+        <br>
+        <label>
+            <input type="checkbox" id="addHonorCheckbox" onchange="toggleHonorField()"> Add an Honor
+        </label>
+        <textarea id="honorField" placeholder="Honor message..." style="display: none;"></textarea>
+    </div>
+    <div>
+        <button class="submit-button" onclick="submitDonation()">Submit Donation</button>
+    </div>
+
+  <script>
+    function setAmount(amount) {
+      // Handle selected donation amount
+      console.log(`Donation amount set to $${amount}`);
+    }
+
+    function setFrequency(frequency) {
+      // Handle selected donation frequency
+      console.log(`Donation frequency set to ${frequency}`);
+    }
+
+    function toggleCommentField() {
+        var commentField = document.getElementById("commentField");
+        commentField.style.display = (commentField.style.display === "none") ? "block" : "none";
+    }
+
+    function toggleHonorField() {
+        var honorField = document.getElementById("honorField");
+        honorField.style.display = (honorField.style.display === "none") ? "block" : "none";
+    }
+    function submitDonation() {
+      // Implement donation submission logic
+      console.log('Donation submitted!');
+    }
+  </script>
+
+</body>
+</html>
